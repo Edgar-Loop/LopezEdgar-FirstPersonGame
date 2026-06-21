@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c6vggwswprn4m"]
+
+[ext_resource type="Texture2D" uid="uid://otd6n52elydg" path="res://assets/textures/dev/grids/Orange/texture_05.png" id="1_nxj5y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oqrbh"]
+albedo_texture = ExtResource("1_nxj5y")
+
+[node name="Gun" type="CSGBox3D" unique_id=1098632179]
+transform = Transform3D(0.07999998, 0, 0, 0, 0.09999996, 0, 4.440892e-16, 0, 1.0000001, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_oqrbh")
+
+[node name="Handle" type="CSGBox3D" parent="." unique_id=1934423681]
+transform = Transform3D(0.99999994, 1.0927844e-07, -3.2783552e-07, -6.993824e-08, -4.3711385e-08, -3.000002, -6.99382e-09, 0.099999934, -1.31134135e-08, 0, -1, 0.37701797)
+
+[node name="Hammer" type="CSGBox3D" parent="." unique_id=1897356653]
+transform = Transform3D(1.1956762, 1.1574805e-07, -6.5567086e-08, -8.362351e-08, -4.6299213e-08, -0.6000003, -8.362348e-09, 0.105920166, -2.6226827e-09, 0, -0.2111092, 0.4656465)
+operation = 2
+size = Vector3(1, 0.7149658, 1.0313721)
+
+[node name="Pos" type="Node3D" parent="." unique_id=1063935975]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -2.646978e-23, 0, 1, 0, 0, -0.52877027)
+
+[node name="Hammer2" type="CSGBox3D" parent="." unique_id=1389809763]
+transform = Transform3D(1.1956762, 6.395846e-08, -2.965751e-08, -8.362351e-08, -2.558338e-08, -0.27139407, -8.362347e-09, 0.0585279, -1.1863001e-09, 0, 0.4214637, 0.4656465)
+operation = 2
+size = Vector3(1, 0.7149658, 1.0313721)

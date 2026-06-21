@@ -22,6 +22,9 @@ var crouching_depth = -0.9
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+var bullet = load("res://Scenes/bullet.tscn")
+@onready var pos = $Head/Camera3D/Gun/barrel
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
@@ -65,4 +68,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, current_speed)
 		velocity.z = move_toward(velocity.z, 0, current_speed)
 
+	if Input.is_action_just_pressed("Shoot"):
+		var instance = bullet.instantiate()
+		instance.global_transform = pos.global_transform
+		get_parent().add_child(instance)
+
+		print("Bullet spawned at: ", instance.global_position)
 	move_and_slide()

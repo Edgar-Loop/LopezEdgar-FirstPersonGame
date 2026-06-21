@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bm34kawj0c4ma" path="res://Addons/Material/OakWoodMaterial.webp" id="3_v1gob"]
 [ext_resource type="PackedScene" uid="uid://bhaj66gg23hag" path="res://Scenes/house.tscn" id="4_vy5pj"]
 [ext_resource type="PackedScene" uid="uid://d1lyjywbng4uy" path="res://Scenes/cross.tscn" id="6_50glp"]
+[ext_resource type="PackedScene" uid="uid://c6vggwswprn4m" path="res://Scenes/gun.tscn" id="9_vy5pj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0sclb"]
 albedo_texture = ExtResource("1_jw32o")
@@ -641,7 +642,7 @@ light_energy = 0.5
 shadow_enabled = true
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1942950186]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57, 1, 58)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -57, 1, 58)
 script = ExtResource("3_pbw6q")
 
 [node name="standing_collision_shape" type="CollisionShape3D" parent="Player" unique_id=775800185]
@@ -655,6 +656,12 @@ shape = SubResource("CapsuleShape3D_kln2b")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=2129692389]
+
+[node name="Gun" parent="Player/Head/Camera3D" unique_id=1098632179 instance=ExtResource("9_vy5pj")]
+transform = Transform3D(0.07999998, 0, -5.5511172e-15, 0, 0.09999996, 0, 4.440892e-16, 0, 1.0000001, 0.5, -0.29999995, -0.97701645)
+
+[node name="barrel" type="Node3D" parent="Player/Head/Camera3D/Gun" unique_id=1088052235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, -3.5527137e-15, 0, 1, 0, 0, -0.7004204)
 
 [node name="RayCast3D" type="RayCast3D" parent="Player" unique_id=2053177386]
 target_position = Vector3(0, 2, 0)
