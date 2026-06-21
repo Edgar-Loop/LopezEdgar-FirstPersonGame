@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dlj82c0bqbfn"]
+
+[ext_resource type="PackedScene" uid="uid://45rcl3na0ue6" path="res://Addons/brackeys_3d_game_assets/zombie/zombie.glb" id="1_4ru28"]
+
+[node name="Node3D" type="Node3D" unique_id=140576949]
+
+[node name="zombie" parent="." unique_id=1123350246 instance=ExtResource("1_4ru28")]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="zombie" unique_id=1689156270]
