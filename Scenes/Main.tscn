@@ -1,26 +1,90 @@
 [gd_scene format=3 uid="uid://dhhnkmpaa2oj5"]
 
 [ext_resource type="Texture2D" uid="uid://dj5hr8h8j8yf3" path="res://assets/textures/dev/grids/Dark/texture_07.png" id="1_kln2b"]
+[ext_resource type="Texture2D" uid="uid://8k5xcfhnyy3n" path="res://Addons/Material/Stone Wall Material.webp" id="2_50glp"]
 [ext_resource type="Texture2D" uid="uid://bd5kgnogrnjw0" path="res://assets/hdris/kloofendal_48d_partly_cloudy_puresky_2k.hdr" id="2_rgh2o"]
+[ext_resource type="Texture2D" uid="uid://ddyveexkritnk" path="res://Addons/Material/OakPlankMaterial.webp" id="3_jw32o"]
 [ext_resource type="Script" uid="uid://nqubo4pfpio0" path="res://Scripts/player.gd" id="3_pbw6q"]
+[ext_resource type="Texture2D" uid="uid://bm34kawj0c4ma" path="res://Addons/Material/OakWoodMaterial.webp" id="3_v1gob"]
+[ext_resource type="Texture2D" uid="uid://bheux1ijp1j4e" path="res://Addons/Material/Stone Floor Material.webp" id="5_vy5pj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8j60k"]
 albedo_texture = ExtResource("1_kln2b")
 uv1_triplanar = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0sclb"]
+albedo_texture = ExtResource("2_50glp")
+uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kln2b"]
-albedo_texture = ExtResource("1_kln2b")
+albedo_texture = ExtResource("2_50glp")
+uv1_scale = Vector3(0.08, 0.08, 0.08)
 uv1_triplanar = true
+uv1_world_triplanar = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rgh2o"]
-albedo_texture = ExtResource("1_kln2b")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pbw6q"]
-albedo_texture = ExtResource("1_kln2b")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sxkr1"]
+albedo_texture = ExtResource("3_jw32o")
+uv1_scale = Vector3(0.6, 0.6, 0.6)
 uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fq0cl"]
+albedo_texture = ExtResource("3_jw32o")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hwpts"]
+albedo_texture = ExtResource("5_vy5pj")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_50glp"]
+albedo_texture = ExtResource("3_v1gob")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1gob"]
 albedo_texture = ExtResource("1_kln2b")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vy5pj"]
+albedo_texture = ExtResource("3_v1gob")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bmxlf"]
+albedo_texture = ExtResource("3_v1gob")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kpch"]
+albedo_texture = ExtResource("3_v1gob")
+uv1_scale = Vector3(0.6, 0.6, 0.6)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grg3l"]
+uv1_scale = Vector3(0.6, 0.6, 0.6)
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_frkhe"]
+albedo_texture = ExtResource("3_v1gob")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1p5hy"]
+albedo_texture = ExtResource("3_v1gob")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1m7h"]
+albedo_texture = ExtResource("3_v1gob")
+uv1_scale = Vector3(0.6, 0.6, 0.6)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_erwvk"]
+albedo_texture = ExtResource("3_v1gob")
+uv1_scale = Vector3(0.6, 0.6, 0.6)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2w5on"]
+albedo_texture = ExtResource("3_v1gob")
+uv1_scale = Vector3(0.6, 0.6, 0.6)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_346fj"]
+albedo_texture = ExtResource("3_v1gob")
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_fo5ed"]
 panorama = ExtResource("2_rgh2o")
@@ -454,6 +518,7 @@ material = SubResource("StandardMaterial3D_8j60k")
 
 [node name="House" type="CSGBox3D" parent="Stage/Buildings" unique_id=650469803]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 10, 73)
+material_overlay = SubResource("StandardMaterial3D_0sclb")
 use_collision = true
 size = Vector3(20, 20, 20)
 material = SubResource("StandardMaterial3D_kln2b")
@@ -463,49 +528,35 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 operation = 2
 use_collision = true
 size = Vector3(17, 17, 17)
-material = SubResource("StandardMaterial3D_kln2b")
 
 [node name="Door" type="CSGCylinder3D" parent="Stage/Buildings/House" unique_id=266822079]
 transform = Transform3D(3.7266617, 0, 0, 0, -3.7377937e-08, 5.3999996, 0, -0.8551074, -2.3604149e-07, 0, -8, -9.224113)
 operation = 2
-material = SubResource("StandardMaterial3D_rgh2o")
-
-[node name="Second_Floor" type="CSGBox3D" parent="Stage/Buildings/House" unique_id=241266952]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.4759197, 0)
-use_collision = true
-size = Vector3(20, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Inside_Stairs" type="CSGBox3D" parent="Stage/Buildings/House/Second_Floor" unique_id=1538852957]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.020447731, 7)
-operation = 2
-use_collision = true
-size = Vector3(10, 1.399292, 3)
-material = SubResource("StandardMaterial3D_kln2b")
+calculate_tangents = false
 
 [node name="Window2" type="CSGBox3D" parent="Stage/Buildings/House" unique_id=1073686135]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, 1, -9.207108)
 operation = 2
+calculate_tangents = false
 size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
 
 [node name="Window" type="CSGBox3D" parent="Stage/Buildings/House" unique_id=969448318]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, 1, -9.207108)
 operation = 2
+calculate_tangents = false
 size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
 
 [node name="Window3" type="CSGBox3D" parent="Stage/Buildings/House" unique_id=1768395504]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, -6.2026634, -9.207108)
 operation = 2
+calculate_tangents = false
 size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
 
 [node name="Window4" type="CSGBox3D" parent="Stage/Buildings/House" unique_id=1513482719]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, -6.2026634, -9.207108)
 operation = 2
+calculate_tangents = false
 size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
 
 [node name="Stairs" type="Node" parent="Stage/Buildings/House" unique_id=402773482]
 
@@ -611,507 +662,57 @@ use_collision = true
 size = Vector3(8, 1, 20)
 material = SubResource("StandardMaterial3D_kln2b")
 
-[node name="House2" type="CSGBox3D" parent="Stage/Buildings" unique_id=969229024]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 10, 73)
-use_collision = true
-size = Vector3(20, 20, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Inside" type="CSGBox3D" parent="Stage/Buildings/House2" unique_id=1730239063]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
-operation = 2
-use_collision = true
-size = Vector3(17, 17, 17)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Door" type="CSGCylinder3D" parent="Stage/Buildings/House2" unique_id=1804096498]
-transform = Transform3D(3.7266617, 0, 0, 0, -3.7377937e-08, 5.3999996, 0, -0.8551074, -2.3604149e-07, 0, -8, -9.224113)
-operation = 2
-material = SubResource("StandardMaterial3D_rgh2o")
-
-[node name="Second_Floor" type="CSGBox3D" parent="Stage/Buildings/House2" unique_id=842537680]
+[node name="Second_Floor" type="CSGBox3D" parent="Stage/Buildings/House" unique_id=241266952]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.4759197, 0)
 use_collision = true
-size = Vector3(20, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
+size = Vector3(18, 1, 18)
+material = SubResource("StandardMaterial3D_sxkr1")
 
-[node name="Inside_Stairs" type="CSGBox3D" parent="Stage/Buildings/House2/Second_Floor" unique_id=1943985794]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.020447731, 7)
+[node name="Inside_Stairs" type="CSGBox3D" parent="Stage/Buildings/House/Second_Floor" unique_id=1538852957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.9, 3.5, 0.020447731, 7)
 operation = 2
 use_collision = true
 size = Vector3(10, 1.399292, 3)
-material = SubResource("StandardMaterial3D_kln2b")
+material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="Window2" type="CSGBox3D" parent="Stage/Buildings/House2" unique_id=727837106]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, 1, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window" type="CSGBox3D" parent="Stage/Buildings/House2" unique_id=660337900]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, 1, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window3" type="CSGBox3D" parent="Stage/Buildings/House2" unique_id=1741868438]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, -6.2026634, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window4" type="CSGBox3D" parent="Stage/Buildings/House2" unique_id=159411131]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, -6.2026634, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Stairs" type="Node" parent="Stage/Buildings/House2" unique_id=1161482711]
-
-[node name="Stair" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1548018340]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 16.894657, 6.3329864, 80)
+[node name="First_Floor" type="CSGBox3D" parent="Stage/Buildings/House" unique_id=81249885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.47592, 0)
 use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair2" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1715801]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 16.404648, 5.966048, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair3" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=255045124]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 15.917564, 5.573638, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair4" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1447404950]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 15.429024, 5.2066994, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair5" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1253472140]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 14.936268, 4.810059, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair6" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1010101782]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 14.491325, 4.4431205, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair7" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=769627332]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 14.043125, 4.0507107, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair8" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1168991521]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 13.601646, 3.6660252, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair9" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=838635667]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 13.154747, 3.2717047, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair10" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=389206139]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 12.73391, 2.904766, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair11" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=292609441]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 12.309483, 2.5123558, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair12" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=2002718554]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 11.897835, 2.1454182, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair13" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1959060606]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 11.477291, 1.7575026, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair14" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=549801004]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 10.89238, 1.3905649, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair15" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=1131121300]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 10.324017, 1.006423, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair16" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=992739023]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 9.832134, 0.6255884, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair17" type="CSGBox3D" parent="Stage/Buildings/House2/Stairs" unique_id=979022520]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, 9.33392, 0.2414465, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="House3" type="CSGBox3D" parent="Stage/Buildings" unique_id=877495349]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 10, 73)
-use_collision = true
-size = Vector3(20, 20, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Inside" type="CSGBox3D" parent="Stage/Buildings/House3" unique_id=254048308]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
-operation = 2
-use_collision = true
-size = Vector3(17, 17, 17)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Door" type="CSGCylinder3D" parent="Stage/Buildings/House3" unique_id=1841708364]
-transform = Transform3D(3.7266617, 0, 0, 0, -3.7377937e-08, 5.3999996, 0, -0.8551074, -2.3604149e-07, 0, -8, -9.224113)
-operation = 2
-material = SubResource("StandardMaterial3D_rgh2o")
-
-[node name="Second_Floor" type="CSGBox3D" parent="Stage/Buildings/House3" unique_id=796757730]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.4759197, 0)
-use_collision = true
-size = Vector3(20, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Inside_Stairs" type="CSGBox3D" parent="Stage/Buildings/House3/Second_Floor" unique_id=361279342]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.020447731, 7)
-operation = 2
-use_collision = true
-size = Vector3(10, 1.399292, 3)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Window2" type="CSGBox3D" parent="Stage/Buildings/House3" unique_id=1428056063]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, 1, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window" type="CSGBox3D" parent="Stage/Buildings/House3" unique_id=554552555]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, 1, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window3" type="CSGBox3D" parent="Stage/Buildings/House3" unique_id=755574942]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, -6.2026634, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window4" type="CSGBox3D" parent="Stage/Buildings/House3" unique_id=1018894554]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, -6.2026634, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Stairs" type="Node" parent="Stage/Buildings/House3" unique_id=1071054694]
-
-[node name="Stair" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1655014375]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -8.105343, 6.3329864, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair2" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1512978041]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -8.595352, 5.966048, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair3" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=59452721]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -9.082436, 5.573638, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair4" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1890329146]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -9.570976, 5.2066994, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair5" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=669768465]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -10.063732, 4.810059, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair6" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1904773424]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -10.508675, 4.4431205, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair7" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=65590068]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -10.956875, 4.0507107, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair8" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=660748427]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -11.398354, 3.6660252, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair9" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=414274039]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -11.845253, 3.2717047, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair10" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1296393258]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -12.26609, 2.904766, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair11" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1991325335]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -12.690517, 2.5123558, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair12" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1658954486]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -13.102165, 2.1454182, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair13" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1727508798]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -13.522709, 1.7575026, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair14" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=494856315]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -14.10762, 1.3905649, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair15" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1396081676]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -14.675983, 1.006423, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair16" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=1703701251]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -15.167866, 0.6255884, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair17" type="CSGBox3D" parent="Stage/Buildings/House3/Stairs" unique_id=711054926]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -15.66608, 0.2414465, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="House4" type="CSGBox3D" parent="Stage/Buildings" unique_id=48758138]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 10, 73)
-use_collision = true
-size = Vector3(20, 20, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Inside" type="CSGBox3D" parent="Stage/Buildings/House4" unique_id=8713007]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
-operation = 2
-use_collision = true
-size = Vector3(17, 17, 17)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Door" type="CSGCylinder3D" parent="Stage/Buildings/House4" unique_id=2035574859]
-transform = Transform3D(3.7266617, 0, 0, 0, -3.7377937e-08, 5.3999996, 0, -0.8551074, -2.3604149e-07, 0, -8, -9.224113)
-operation = 2
-material = SubResource("StandardMaterial3D_rgh2o")
-
-[node name="Second_Floor" type="CSGBox3D" parent="Stage/Buildings/House4" unique_id=951732722]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.4759197, 0)
-use_collision = true
-size = Vector3(20, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Inside_Stairs" type="CSGBox3D" parent="Stage/Buildings/House4/Second_Floor" unique_id=1850351508]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.020447731, 7)
-operation = 2
-use_collision = true
-size = Vector3(10, 1.399292, 3)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Window2" type="CSGBox3D" parent="Stage/Buildings/House4" unique_id=205123387]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, 1, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window" type="CSGBox3D" parent="Stage/Buildings/House4" unique_id=2144730044]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, 1, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window3" type="CSGBox3D" parent="Stage/Buildings/House4" unique_id=650216004]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.402134, -6.2026634, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Window4" type="CSGBox3D" parent="Stage/Buildings/House4" unique_id=804393130]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.597866, -6.2026634, -9.207108)
-operation = 2
-size = Vector3(3, 3, 1.7158203)
-material = SubResource("StandardMaterial3D_pbw6q")
-
-[node name="Stairs" type="Node" parent="Stage/Buildings/House4" unique_id=1032034783]
-
-[node name="Stair" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=2062992381]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -32.105343, 6.3329864, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair2" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=2039346115]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -32.595352, 5.966048, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair3" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=66950775]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -33.082436, 5.573638, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair4" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1969786490]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -33.570976, 5.2066994, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair5" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1022007435]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -34.063732, 4.810059, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair6" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1246376749]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -34.508675, 4.4431205, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair7" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1502714172]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -34.956875, 4.0507107, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair8" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1814873624]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -35.398354, 3.6660252, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair9" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1235551233]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -35.845253, 3.2717047, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair10" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=420937783]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -36.26609, 2.904766, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair11" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=342265649]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -36.690517, 2.5123558, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair12" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1416169629]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -37.102165, 2.1454182, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair13" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=211655643]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -37.52271, 1.7575026, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair14" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=429597199]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -38.10762, 1.3905649, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair15" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=1219796578]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -38.675983, 1.006423, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair16" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=17594507]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -39.167866, 0.6255884, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
-
-[node name="Stair17" type="CSGBox3D" parent="Stage/Buildings/House4/Stairs" unique_id=863510144]
-transform = Transform3D(0.14910956, 0, 0, 0, 0.39606, 0, 0, 0, 0.14217454, -39.66608, 0.2414465, 80)
-use_collision = true
-size = Vector3(8, 1, 20)
-material = SubResource("StandardMaterial3D_kln2b")
+size = Vector3(18, 1, 18)
+material = SubResource("StandardMaterial3D_hwpts")
 
 [node name="Grave" type="Node" parent="." unique_id=110913660]
 
 [node name="Pole" type="CSGCylinder3D" parent="Grave" unique_id=266521245]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 1.05, 63.499996)
+material_override = SubResource("StandardMaterial3D_50glp")
+use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole4" type="CSGCylinder3D" parent="Grave" unique_id=1917364975]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.5, 1.05, 63.499996)
+material_override = SubResource("StandardMaterial3D_vy5pj")
+use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole5" type="CSGCylinder3D" parent="Grave" unique_id=528343630]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.5, 1.05, 63.499996)
+material_override = SubResource("StandardMaterial3D_bmxlf")
+use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole3" type="CSGCylinder3D" parent="Grave" unique_id=1799355198]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -61.025, 1.5999998, 63.499996)
+material_override = SubResource("StandardMaterial3D_4kpch")
+use_collision = true
 height = 13.35
-material = SubResource("StandardMaterial3D_v1gob")
+material = SubResource("StandardMaterial3D_grg3l")
 
 [node name="Pole6" type="CSGCylinder3D" parent="Grave/Pole3" unique_id=194307600]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3841858e-07, -0.042186737, 0)
@@ -1122,33 +723,45 @@ material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole2" type="CSGCylinder3D" parent="Grave" unique_id=1507092566]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68, 1.05, 63.499996)
+material_override = SubResource("StandardMaterial3D_frkhe")
+use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole6" type="CSGCylinder3D" parent="Grave" unique_id=1911059010]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 1.05, 86.5)
+material_override = SubResource("StandardMaterial3D_1p5hy")
+use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole7" type="CSGCylinder3D" parent="Grave" unique_id=1477180387]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -61.025, 1.5999998, 86.5)
+material_override = SubResource("StandardMaterial3D_h1m7h")
+use_collision = true
 height = 13.35
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole9" type="CSGCylinder3D" parent="Grave" unique_id=1916963120]
 transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, -53.925003, 1.5999999, 74.918755)
+material_override = SubResource("StandardMaterial3D_erwvk")
+use_collision = true
 height = 22.8375
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole10" type="CSGCylinder3D" parent="Grave" unique_id=1128183639]
 transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, -67.925, 1.5999999, 74.918755)
+material_override = SubResource("StandardMaterial3D_2w5on")
+use_collision = true
 height = 22.8375
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Pole8" type="CSGCylinder3D" parent="Grave" unique_id=2022495463]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68, 1.05, 86.5)
+material_override = SubResource("StandardMaterial3D_346fj")
+use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
@@ -1163,7 +776,7 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1942950186]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 1, 44)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57, 1, 58)
 script = ExtResource("3_pbw6q")
 
 [node name="standing_collision_shape" type="CollisionShape3D" parent="Player" unique_id=775800185]
