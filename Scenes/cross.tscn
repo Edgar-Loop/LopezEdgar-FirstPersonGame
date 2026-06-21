@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d1lyjywbng4uy"]
+
+[ext_resource type="Texture2D" uid="uid://bm34kawj0c4ma" path="res://Addons/Material/OakWoodMaterial.webp" id="1_8pfb8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_angqo"]
+albedo_texture = ExtResource("1_8pfb8")
+
+[node name="Crosspart1" type="CSGBox3D" unique_id=38167265]
+size = Vector3(0.5, 2.7, 0.1)
+material = SubResource("StandardMaterial3D_angqo")
+
+[node name="Crosspart2" type="CSGBox3D" parent="." unique_id=1386133084]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0.5, -0.099998474)
+size = Vector3(0.5, 2, 0.1)
+material = SubResource("StandardMaterial3D_angqo")

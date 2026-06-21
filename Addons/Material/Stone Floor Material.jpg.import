@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bheux1ijp1j4e"
-path.s3tc="res://.godot/imported/Stone Floor Material.webp-575d94b2e853b3a6b9fb4f2a6c84a2bd.s3tc.ctex"
+uid="uid://kiavfnqwhpu8"
+path.s3tc="res://.godot/imported/Stone Floor Material.jpg-acd2353f527a5181b83e244f54d0f710.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Addons/Material/Stone Floor Material.webp"
-dest_files=["res://.godot/imported/Stone Floor Material.webp-575d94b2e853b3a6b9fb4f2a6c84a2bd.s3tc.ctex"]
+source_file="res://Addons/Material/Stone Floor Material.jpg"
+dest_files=["res://.godot/imported/Stone Floor Material.jpg-acd2353f527a5181b83e244f54d0f710.s3tc.ctex"]
 
 [params]
 

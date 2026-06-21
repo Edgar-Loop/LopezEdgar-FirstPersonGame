@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddyveexkritnk"
-path.s3tc="res://.godot/imported/OakPlankMaterial.webp-97a1047ddf41d8d8fea1c9b11cc5ee85.s3tc.ctex"
+uid="uid://cdfx46mipak3f"
+path.s3tc="res://.godot/imported/Stone Wall Material.jpg-3c21508721cdac7a8d894c96dc3290c0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Addons/Material/OakPlankMaterial.webp"
-dest_files=["res://.godot/imported/OakPlankMaterial.webp-97a1047ddf41d8d8fea1c9b11cc5ee85.s3tc.ctex"]
+source_file="res://Addons/Material/Stone Wall Material.jpg"
+dest_files=["res://.godot/imported/Stone Wall Material.jpg-3c21508721cdac7a8d894c96dc3290c0.s3tc.ctex"]
 
 [params]
 
