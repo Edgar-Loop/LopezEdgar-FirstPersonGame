@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cdfx46mipak3f" path="res://Addons/Material/Stone Wall Material.jpg" id="1_3jr7h"]
 [ext_resource type="Texture2D" uid="uid://dxgwnleh3e2ik" path="res://Addons/Material/OakPlankMaterial.jpg" id="2_iqtyj"]
 [ext_resource type="Texture2D" uid="uid://kiavfnqwhpu8" path="res://Addons/Material/Stone Floor Material.jpg" id="3_xi0mm"]
+[ext_resource type="PackedScene" uid="uid://bx0tl6tyysp5l" path="res://Addons/brackeys_3d_game_assets/dungeon_assets/props/torch_mounted.glb" id="4_iqtyj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0sclb"]
 albedo_texture = ExtResource("1_3jr7h")
@@ -211,3 +212,35 @@ calculate_tangents = false
 use_collision = true
 size = Vector3(8, 1, 20)
 material = SubResource("StandardMaterial3D_kln2b")
+
+[node name="torch_mounted2" parent="." unique_id=800110732 instance=ExtResource("4_iqtyj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.4, -7.4, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="torch_mounted2" unique_id=1197386229]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.3113407e-08, 0.5, 0.29999924)
+light_color = Color(1, 0.6666667, 0.15686275, 1)
+light_energy = 1.5
+
+[node name="torch_mounted3" parent="." unique_id=1468758252 instance=ExtResource("4_iqtyj")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -8.500001, -7.4, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="torch_mounted3" unique_id=47885363]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.3113407e-08, 0.5, 0.29999924)
+light_color = Color(1, 0.6666667, 0.15686275, 1)
+light_energy = 1.5
+
+[node name="torch_mounted4" parent="." unique_id=1619477603 instance=ExtResource("4_iqtyj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.4, 0.5999999, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="torch_mounted4" unique_id=1023378860]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.3113407e-08, 0.5, 0.29999924)
+light_color = Color(1, 0.6666667, 0.15686275, 1)
+light_energy = 1.5
+
+[node name="torch_mounted5" parent="." unique_id=1049038982 instance=ExtResource("4_iqtyj")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -8.500001, 0.5999999, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="torch_mounted5" unique_id=2023520942]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.3113407e-08, 0.5, 0.29999924)
+light_color = Color(1, 0.6666667, 0.15686275, 1)
+light_energy = 1.5

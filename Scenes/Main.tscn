@@ -80,10 +80,13 @@ panorama = ExtResource("2_rgh2o")
 
 [sub_resource type="Sky" id="Sky_5ukr8"]
 sky_material = SubResource("PanoramaSkyMaterial_fo5ed")
+radiance_size = 0
 
 [sub_resource type="Environment" id="Environment_o06y3"]
 background_mode = 2
+background_energy_multiplier = 0.5
 sky = SubResource("Sky_5ukr8")
+ambient_light_sky_contribution = 0.5
 tonemap_mode = 2
 glow_enabled = true
 
@@ -512,7 +515,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 10, 73)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 10, 73)
 
 [node name="House3" parent="Stage/Buildings" unique_id=1101369077 instance=ExtResource("4_vy5pj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.368614, 10.17592, 73.14944)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.368614, 10.07592, 73.14944)
 
 [node name="Grave" type="Node" parent="Stage" unique_id=110913660]
 
@@ -633,7 +636,8 @@ transform = Transform3D(0.9961947, 0.08682408, 0.0075961226, -0.08715574, 0.9924
 environment = SubResource("Environment_o06y3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="env" unique_id=210487827]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+transform = Transform3D(0.075610146, 0.9956426, 0.05457551, -0.017337741, 0.056031488, -0.99827874, -0.9969867, 0.074533984, 0.02149879, 0, 17, 0)
+light_energy = 0.5
 shadow_enabled = true
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1942950186]

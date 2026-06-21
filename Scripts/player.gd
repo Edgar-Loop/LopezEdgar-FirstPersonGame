@@ -11,7 +11,7 @@ var current_speed = 5.0
 const walking_speed = 5.0
 const sprint_speed = 15.0
 const crouch_speed = 3.0
-const jump_velocity = 7.5
+const jump_velocity = 8.5
 
 const mouse_sens = 0.4
 
