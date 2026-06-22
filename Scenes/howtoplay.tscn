@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://duf444v5f327s"]
+
+[node name="Howtoplay" type="Node3D" unique_id=580795844]
+
+[node name="Label3D" type="Label3D" parent="." unique_id=908661693]
+no_depth_test = true
+text = "How to play:
+wasd = move
+shift = sprint
+tab/scroll wheel = swap weapons
+press t to hide/show"
+uppercase = true

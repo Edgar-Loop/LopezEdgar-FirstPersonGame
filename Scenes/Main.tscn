@@ -3,64 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://creg1khheknu7" path="res://Addons/Material/DirtMaterial.webp" id="1_jw32o"]
 [ext_resource type="Texture2D" uid="uid://dj5hr8h8j8yf3" path="res://assets/textures/dev/grids/Dark/texture_07.png" id="1_kln2b"]
 [ext_resource type="Texture2D" uid="uid://bd5kgnogrnjw0" path="res://assets/hdris/kloofendal_48d_partly_cloudy_puresky_2k.hdr" id="2_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://c1a7vhb5p75kb" path="res://Scenes/grave.tscn" id="2_vy5pj"]
 [ext_resource type="Texture2D" uid="uid://c15oam6rbw45r" path="res://Addons/Material/GravelMaterial.webp" id="3_50glp"]
 [ext_resource type="Script" uid="uid://nqubo4pfpio0" path="res://Scripts/player.gd" id="3_pbw6q"]
-[ext_resource type="Texture2D" uid="uid://bm34kawj0c4ma" path="res://Addons/Material/OakWoodMaterial.webp" id="3_v1gob"]
 [ext_resource type="PackedScene" uid="uid://bhaj66gg23hag" path="res://Scenes/house.tscn" id="4_vy5pj"]
-[ext_resource type="PackedScene" uid="uid://d1lyjywbng4uy" path="res://Scenes/cross.tscn" id="6_50glp"]
 [ext_resource type="PackedScene" uid="uid://dlj82c0bqbfn" path="res://Scenes/Zombie.tscn" id="7_bmxlf"]
 [ext_resource type="PackedScene" uid="uid://c6vggwswprn4m" path="res://Scenes/gun.tscn" id="9_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://bi2yyiwor5jj" path="res://Scenes/bazooka.tscn" id="10_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://duf444v5f327s" path="res://Scenes/howtoplay.tscn" id="11_4kpch"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fq0cl"]
 albedo_texture = ExtResource("1_kln2b")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_50glp"]
-albedo_texture = ExtResource("3_v1gob")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1gob"]
-albedo_texture = ExtResource("1_kln2b")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vy5pj"]
-albedo_texture = ExtResource("3_v1gob")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bmxlf"]
-albedo_texture = ExtResource("3_v1gob")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kpch"]
-albedo_texture = ExtResource("3_v1gob")
-uv1_scale = Vector3(0.6, 0.6, 0.6)
-uv1_triplanar = true
-uv1_world_triplanar = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grg3l"]
-uv1_scale = Vector3(0.6, 0.6, 0.6)
-uv1_world_triplanar = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_frkhe"]
-albedo_texture = ExtResource("3_v1gob")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1p5hy"]
-albedo_texture = ExtResource("3_v1gob")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1m7h"]
-albedo_texture = ExtResource("3_v1gob")
-uv1_scale = Vector3(0.6, 0.6, 0.6)
-uv1_triplanar = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_erwvk"]
-albedo_texture = ExtResource("3_v1gob")
-uv1_scale = Vector3(0.6, 0.6, 0.6)
-uv1_triplanar = true
-uv1_world_triplanar = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2w5on"]
-albedo_texture = ExtResource("3_v1gob")
-uv1_scale = Vector3(0.6, 0.6, 0.6)
-uv1_triplanar = true
-uv1_world_triplanar = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_346fj"]
-albedo_texture = ExtResource("3_v1gob")
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_4kpch"]
 vertices = PackedVector3Array(-69.5, 0.4504404, 64.687454, -25, 0.4504404, 64.687454, -24.75, 0.4504404, 62.43745, -17.5, 0.4504404, -29.56255, -69.5, 0.4504404, -29.56255, -17.5, 0.4504404, 62.43745, -15.5, 0.4504404, 62.43745, -15.25, 0.4504404, 63.93745, -13.5, 0.4504404, 63.68745, -13.25, 0.4504404, 62.43745, -11.25, 0.4504404, -29.56255, -11.25, 0.4504404, 62.43745, -6, 0.4504404, 62.43745, -6, 0.9504404, -29.56255, -6, 0.4504404, -5.820614, -6, 0.9504404, -8.788357, -6.994541, 0.9504404, -10.57004, -6.9844704, 0.4504404, -7.554117, -8.504734, 0.4504404, -18.045834, -4, 0.4504404, 62.43745, -3.75, 0.4504404, 64.437454, 0.5, 0.4504404, 64.437454, 0.75, 0.4504404, 62.43745, 2.75, 3.4504404, -29.56255, -5.6129, 1.2004404, -11.756098, -5.4838715, 0.4504404, -5.820614, 2.0403214, 0.4504404, 3.082615, 2.1048355, 0.7004404, 0.114868164, 2.2983856, 2.9504404, -8.788357, -1.0243988, 2.7004404, -10.538195, -3.994423, 1.9504404, -10.560169, 0.510376, 2.7004404, -18.04695, 2.75, 0.4504404, 62.43745, 2.75, 0.4504404, 3.082611, 2.75, 3.2004404, -8.788357, 0.5, 0.4504404, -11.31255, 0.5, 0.4504404, -10.06255, 10.25, 0.4504404, -0.06254959, 49.5, 0.4504404, -0.06254959, 49.5, 0.4504404, -29.56255, 1, 0.4504404, -29.56255, 9.75, 0.4504404, 62.43745, 10, 0.4504404, 63.68745, 12, 0.4504404, 63.68745, 12.25, 0.4504404, 62.43745, 10.5, 5.4504404, -29.06255, 10.3548355, 5.4504404, -11.352871, 10.185486, 0.4504404, 9.308418, 11.233871, 0.4504404, 9.308418, 10.838707, 5.4504404, -11.352873, 21.5, 0.4504404, 62.43745, 15.1129, 0.4504404, 9.308418, 12.629028, 5.4504404, -11.352873, 34.75, 0.4504404, 62.43745, 35, 0.4504404, 63.68745, 37, 0.4504404, 63.68745, 37.25, 0.4504404, 62.43745, 49.5, 5.4504404, -29.06255, 46.645164, 5.4504404, -11.352871, 43.314514, 0.4504404, 9.308418, 44.3629, 0.4504404, 9.308418, 47.12903, 5.4504404, -11.352871, 25.75, 0.4504404, 62.43745, 13.451614, 5.4504404, -11.352873, 16.895164, 0.4504404, 9.308418, 16.983292, 5.2004404, -9.038073, 44.01351, 5.2004404, -9.040306, 19.99038, 1.4504404, 4.412693, 15.498764, 4.4504404, -6.059576, 42.515556, 1.4504404, 4.427498, 46.5, 0.4504404, 62.43745, 46.75, 0.4504404, 64.187454, 49.5, 0.4504404, 63.93745, 48.919357, 5.4504404, -11.352871, 48.241936, 0.4504404, 9.308418, 49.5, 0.4504404, 9.93745, 49.5, 5.4504404, -11.06255, 21.75, 0.4504404, 64.437454, 25.5, 0.4504404, 64.437454, 8.005577, 4.7004404, -9.060169, 5.01577, 1.4504404, -0.08437538, -9, -1.7995596, -1.0625496, -9, -4.0495596, 7.9374504, 0.25, -1.7995596, 8.43745, -7.0199623, -3.2995596, 5.9454117, -24, 20.45044, 63.43745, -24, 20.45044, 82.687454, -4.75, 20.45044, 82.687454, -4.75, 20.45044, 63.43745, -21.75, 2.7004404, 63.43745, -21.75, 2.7004404, 64.187454, -20, 2.7004404, 64.187454, -20, 2.7004404, 63.43745, -21.75, 9.95044, 63.43745, -21.75, 9.95044, 64.187454, -20, 9.95044, 64.187454, -20, 9.95044, 63.43745, -8.75, 2.7004404, 63.43745, -8.75, 2.7004404, 64.187454, -7, 2.7004404, 64.187454, -7, 2.7004404, 63.43745, -8.75, 9.95044, 63.43745, -8.75, 9.95044, 64.187454, -7, 9.95044, 64.187454, -7, 9.95044, 63.43745, 1.5, 20.45044, 63.43745, 1.5, 20.45044, 82.687454, 20.5, 20.45044, 82.687454, 20.5, 20.45044, 63.43745, 3.5, 2.7004404, 63.43745, 3.5, 2.7004404, 64.187454, 5.25, 2.7004404, 64.187454, 5.25, 2.7004404, 63.43745, 3.5, 9.95044, 63.43745, 3.5, 9.95044, 64.187454, 5.25, 9.95044, 64.187454, 5.25, 9.95044, 63.43745, 16.5, 2.7004404, 63.43745, 16.5, 2.7004404, 64.187454, 18.25, 2.7004404, 64.187454, 18.25, 2.7004404, 63.43745, 16.5, 9.95044, 63.43745, 16.5, 9.95044, 64.187454, 18.25, 9.95044, 64.187454, 18.25, 9.95044, 63.43745, 26.5, 20.45044, 63.43745, 26.5, 20.45044, 82.687454, 45.5, 20.45044, 82.687454, 45.5, 20.45044, 63.43745, 28.5, 2.7004404, 63.43745, 28.5, 2.7004404, 64.187454, 30.25, 2.7004404, 64.187454, 30.25, 2.7004404, 63.43745, 28.5, 9.95044, 63.43745, 28.5, 9.95044, 64.187454, 30.25, 9.95044, 64.187454, 30.25, 9.95044, 63.43745, 41.5, 2.7004404, 63.43745, 41.5, 2.7004404, 64.187454, 43.25, 2.7004404, 64.187454, 43.25, 2.7004404, 63.43745, 41.5, 9.95044, 63.43745, 41.5, 9.95044, 64.187454, 43.25, 9.95044, 64.187454, 43.25, 9.95044, 63.43745, -5, 0.4504404, 63.68745, -12.25, 0.4504404, 63.68745, -5.25, 0.4504404, 64.187454, -23.5, 0.4504404, 64.187454, -16.5, 0.4504404, 63.68745, -23.75, 0.4504404, 63.68745, -5, 0.4504404, 82.437454, -5.25, 0.4504404, 81.937454, -23.75, 0.4504404, 82.437454, -23.25, 0.4504404, 82.187454, -12.5, 2.4504404, 80.937454, -12.25, 2.7004404, 79.187454, -14, 1.2004404, 79.187454, -22.25, 0.4504404, 80.937454, -15.285713, 0.4504404, 80.937454, -15.375, 0.4504404, 79.47911, -13.25, 0.4504404, 65.187454, -15.5, 0.4504404, 65.187454, -14, 0.4504404, 78.187454, -11.75, 0.4504404, 78.437454, -22.25, 0.4504404, 65.187454, -11.75, 0.4504404, 80.937454, -6.5, 0.4504404, 80.937454, -6.5, 0.4504404, 65.187454, 20.5, 0.4504404, 63.68745, 13.25, 0.4504404, 63.68745, 20.25, 0.4504404, 64.187454, 2, 0.4504404, 64.187454, 8.75, 0.4504404, 63.68745, 1.75, 0.4504404, 63.68745, 20.5, 0.4504404, 82.437454, 20.25, 0.4504404, 81.937454, 1.75, 0.4504404, 82.437454, 2.25, 0.4504404, 82.187454, 12.25, 0.4504404, 65.187454, 9.75, 0.4504404, 65.187454, 11.25, 0.4504404, 77.937454, 14, 0.4504404, 78.187454, 19, 0.4504404, 80.937454, 19, 0.4504404, 65.187454, 13.25, 2.7004404, 80.937454, 13.25, 2.7004404, 78.937454, 11.25, 1.2004404, 78.937454, 3.25, 0.4504404, 80.937454, 10.39286, 0.4504404, 80.937454, 9.916664, 0.4504404, 79.27078, 14, 0.4504404, 80.937454, 3.25, 0.4504404, 65.187454, 45.5, 0.4504404, 63.68745, 38.25, 0.4504404, 63.68745, 45.25, 0.4504404, 64.187454, 27, 0.4504404, 64.187454, 33.75, 0.4504404, 63.68745, 26.75, 0.4504404, 63.68745, 45.5, 0.4504404, 82.437454, 45.25, 0.4504404, 81.937454, 26.75, 0.4504404, 82.437454, 27.25, 0.4504404, 82.187454, 37.25, 0.4504404, 65.187454, 34.75, 0.4504404, 65.187454, 36.25, 0.4504404, 77.937454, 39, 0.4504404, 78.187454, 44, 0.4504404, 80.937454, 44, 0.4504404, 65.187454, 38.25, 2.7004404, 80.937454, 38.25, 2.7004404, 78.937454, 36.25, 1.2004404, 78.937454, 28.25, 0.4504404, 80.937454, 35.39286, 0.4504404, 80.937454, 34.916664, 0.4504404, 79.27078, 39, 0.4504404, 80.937454, 28.25, 0.4504404, 65.187454, 46.75, 0.4504404, 81.937454, 49.5, 0.4504404, 82.187454, -3.75, 0.4504404, 81.687454, 0.5, 0.4504404, 81.687454, 21.75, 0.4504404, 81.687454, 25.5, 0.4504404, 81.687454, -23.5, 0.4504404, 89.437454, -23.25, 0.4504404, 83.687454, -25, 0.4504404, 83.437454, -69.5, 0.4504404, 89.437454, -7.5, 6.7004404, 79.437454, -6.5, 6.9504404, 80.937454, -10.099998, 4.2004404, 80.937454, -7.700001, 6.7004404, 80.937454, -6.5, 7.4504404, 65.187454, -22.25, 7.4504404, 65.187454, -16, 7.4504404, 78.437454, -7.5, 7.4504404, 78.437454, -6.5, 7.4504404, 78.07382, -22.25, 7.4504404, 80.937454, -16.25, 7.4504404, 80.937454, 18, 6.4504404, 79.187454, 19, 6.9504404, 80.937454, 17.5625, 6.2004404, 80.937454, 19, 7.4504404, 65.187454, 3.25, 7.4504404, 65.187454, 9.25, 7.4504404, 78.187454, 18, 7.4504404, 78.187454, 19, 7.4504404, 78.07382, 3.25, 7.4504404, 80.937454, 9, 7.4504404, 80.937454, 43, 6.4504404, 79.187454, 44, 6.9504404, 80.937454, 42.5625, 6.2004404, 80.937454, 44, 7.4504404, 65.187454, 28.25, 7.4504404, 65.187454, 34.25, 7.4504404, 78.187454, 43, 7.4504404, 78.187454, 44, 7.4504404, 78.07382, 28.25, 7.4504404, 80.937454, 34, 7.4504404, 80.937454, 0.5, 0.4504404, 83.437454, -3.75, 0.4504404, 83.437454, 2.25, 0.4504404, 83.687454, -5.5, 0.4504404, 83.687454, -5.25, 0.4504404, 89.437454, 2, 0.4504404, 89.437454, 25.5, 0.4504404, 83.437454, 21.75, 0.4504404, 83.437454, 27.25, 0.4504404, 83.687454, 20, 0.4504404, 83.687454, 20.25, 0.4504404, 89.437454, 27, 0.4504404, 89.437454, 46.5, 0.4504404, 83.687454, 49.5, 0.4504404, 89.437454)
@@ -261,120 +214,10 @@ use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="Grave" type="Node" parent="Stage" unique_id=110913660]
-
-[node name="Pole" type="CSGCylinder3D" parent="Stage/Grave" unique_id=266521245]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 1.05, 63.499996)
-material_override = SubResource("StandardMaterial3D_50glp")
-use_collision = true
-radius = 0.6
-height = 2.1
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole4" type="CSGCylinder3D" parent="Stage/Grave" unique_id=1917364975]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.5, 1.05, 63.499996)
-material_override = SubResource("StandardMaterial3D_vy5pj")
-use_collision = true
-radius = 0.6
-height = 2.1
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole5" type="CSGCylinder3D" parent="Stage/Grave" unique_id=528343630]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.5, 1.05, 63.499996)
-material_override = SubResource("StandardMaterial3D_bmxlf")
-use_collision = true
-radius = 0.6
-height = 2.1
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole3" type="CSGCylinder3D" parent="Stage/Grave" unique_id=1799355198]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -61.025, 1.5999998, 63.499996)
-material_override = SubResource("StandardMaterial3D_4kpch")
-use_collision = true
-height = 13.35
-material = SubResource("StandardMaterial3D_grg3l")
-
-[node name="Pole6" type="CSGCylinder3D" parent="Stage/Grave/Pole3" unique_id=194307600]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3841858e-07, -0.042186737, 0)
-operation = 2
-radius = 0.6
-height = 3.759375
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole2" type="CSGCylinder3D" parent="Stage/Grave" unique_id=1507092566]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68, 1.05, 63.499996)
-material_override = SubResource("StandardMaterial3D_frkhe")
-use_collision = true
-radius = 0.6
-height = 2.1
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole6" type="CSGCylinder3D" parent="Stage/Grave" unique_id=1911059010]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 1.05, 86.5)
-material_override = SubResource("StandardMaterial3D_1p5hy")
-use_collision = true
-radius = 0.6
-height = 2.1
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole7" type="CSGCylinder3D" parent="Stage/Grave" unique_id=1477180387]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -61.025, 1.5999998, 86.5)
-material_override = SubResource("StandardMaterial3D_h1m7h")
-use_collision = true
-height = 13.35
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole9" type="CSGCylinder3D" parent="Stage/Grave" unique_id=1916963120]
-transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, -53.925003, 1.5999999, 74.918755)
-material_override = SubResource("StandardMaterial3D_erwvk")
-use_collision = true
-height = 22.8375
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole10" type="CSGCylinder3D" parent="Stage/Grave" unique_id=1128183639]
-transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, -67.925, 1.5999999, 74.918755)
-material_override = SubResource("StandardMaterial3D_2w5on")
-use_collision = true
-height = 22.8375
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Pole8" type="CSGCylinder3D" parent="Stage/Grave" unique_id=2022495463]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68, 1.05, 86.5)
-material_override = SubResource("StandardMaterial3D_346fj")
-use_collision = true
-radius = 0.6
-height = 2.1
-material = SubResource("StandardMaterial3D_v1gob")
-
-[node name="Crosspart1" parent="Stage/Grave" unique_id=38167265 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.9961947, 0.08715573, -1.2987217e-09, -0.08715573, 0.9961946, -1.4844457e-08, 0, 1.490116e-08, 0.9999999, -61.004356, 0.9501903, 83)
-size = Vector3(0.5, 2.6000001, 0.1)
-
-[node name="Crosspart2" parent="Stage/Grave" unique_id=824507808 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.9961947, -0.08715574, 0, 0.08682408, 0.9924039, -0.08715574, 0.0075961226, 0.08682408, 0.9961947, -57, 0.9, 83)
-
-[node name="Crosspart3" parent="Stage/Grave" unique_id=163359885 instance=ExtResource("6_50glp")]
-transform = Transform3D(1, 0, 0, 0, 0.9848077, -0.17364818, 0, 0.17364818, 0.9848077, -65, 0.9, 83)
-
-[node name="Crosspart4" parent="Stage/Grave" unique_id=358882060 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.9667751, -0.17159835, -0.18947244, 0.20884548, 0.9576246, 0.19833942, 0.14740878, -0.2313201, 0.9616452, -61, 1, 77)
-
-[node name="Crosspart5" parent="Stage/Grave" unique_id=1548614899 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.98481965, -0.0045421063, 0.17352097, 0.005393529, 0.9999756, -0.004435526, -0.17349659, 0.005304085, 0.9848202, -57, 1, 77)
-
-[node name="Crosspart6" parent="Stage/Grave" unique_id=1294762355 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.9848077, -0.030153692, -0.17101006, 0, 0.9848077, -0.1736482, 0.17364818, 0.17101008, 0.96984625, -65, 1.1, 77)
-
-[node name="Crosspart7" parent="Stage/Grave" unique_id=483608812 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.97742254, -0.18102852, -0.108967096, 0.16445924, 0.9755832, -0.1455689, 0.13265859, 0.12436168, 0.9833288, -61, 1, 71)
-
-[node name="Crosspart8" parent="Stage/Grave" unique_id=860396340 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.98106027, -0.15610555, -0.11468136, 0.1729874, 0.97247434, 0.15610556, 0.08715574, -0.17298742, 0.98106027, -57, 1, 71)
-
-[node name="Crosspart9" parent="Stage/Grave" unique_id=163350767 instance=ExtResource("6_50glp")]
-transform = Transform3D(0.9961947, 0.08682408, 0.0075961226, -0.08715574, 0.9924039, 0.08682408, 0, -0.08715574, 0.9961947, -65, 1, 71)
+[node name="Grave" parent="Stage" unique_id=1613656023 instance=ExtResource("2_vy5pj")]
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="Stage" unique_id=575805908]
+visible = false
 navigation_mesh = SubResource("NavigationMesh_4kpch")
 
 [node name="Floor" type="Node" parent="Stage/NavigationRegion3D" unique_id=2015924695]
@@ -671,10 +514,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
 [node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=2129692389]
 
 [node name="Gun" parent="Player/Head/Camera3D" unique_id=1098632179 instance=ExtResource("9_vy5pj")]
-transform = Transform3D(0.07999998, 0, -5.5511172e-15, 0, 0.09999996, 0, 4.440892e-16, 0, 1.0000001, 0.5, -0.29999995, -0.97701645)
+transform = Transform3D(0.079999976, 0, -3.5527137e-15, 0, 0.09999996, 0, 4.440892e-16, 0, 0.6000001, 0.5, -0.29999995, -0.7770157)
 
 [node name="barrel" type="Node3D" parent="Player/Head/Camera3D/Gun" unique_id=1088052235]
-transform = Transform3D(1, 0, 0, 0, 1, 0, -3.5527137e-15, 0, 1, 0, 0, -0.7004204)
+transform = Transform3D(1, 0, -1.1368684e-13, 0, 0.99999994, 0, -4.440892e-15, 0, 0.9999999, 0, 0, -1.0337601)
+
+[node name="Bazooka" parent="Player/Head/Camera3D" unique_id=391967429 instance=ExtResource("10_bmxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.30000007, -0.34999847)
+
+[node name="barrel" type="Node3D" parent="Player/Head/Camera3D/Bazooka" unique_id=2033345447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.0999985)
+
+[node name="Howtoplay" parent="Player/Head/Camera3D" unique_id=580795844 instance=ExtResource("11_4kpch")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2000008, 1.6000001, -3)
 
 [node name="RayCast3D" type="RayCast3D" parent="Player" unique_id=2053177386]
 target_position = Vector3(0, 2, 0)

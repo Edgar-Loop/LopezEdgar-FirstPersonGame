@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://daww2xcpoj8q4"]
+
+[ext_resource type="Script" uid="uid://h45ak0lshclv" path="res://Scenes/rocket.gd" id="1_kvp10"]
+[ext_resource type="Texture2D" uid="uid://otd6n52elydg" path="res://assets/textures/dev/grids/Orange/texture_05.png" id="1_wrv6b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kvp10"]
+albedo_texture = ExtResource("1_wrv6b")
+
+[sub_resource type="SphereMesh" id="SphereMesh_hthiq"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_n4fq7"]
+
+[node name="Rocket" type="Node3D" unique_id=174803842]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1855539829]
+script = ExtResource("1_kvp10")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1813310362]
+material_override = SubResource("StandardMaterial3D_kvp10")
+mesh = SubResource("SphereMesh_hthiq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1892055888]
+shape = SubResource("SphereShape3D_n4fq7")

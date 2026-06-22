@@ -11,14 +11,14 @@ albedo_texture = ExtResource("2_oduel")
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_xjght"]
 
 [node name="Bullet" type="CharacterBody3D" unique_id=1109071475]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+transform = Transform3D(0.22408172, 0, 0, 0, 0.22758624, 0, 0, 0, 1.1287736, 0, 0.1, 0)
 script = ExtResource("1_xjght")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1283577526]
-transform = Transform3D(3, 0, 0, 0, -1.8853312e-08, 2.9999998, 0, -0.43131348, -1.3113414e-07, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -6.2944396e-09, 1, 0, -0.144, -4.371139e-08, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_ycag2")
 mesh = SubResource("CylinderMesh_oduel")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1734339514]
-transform = Transform3D(3, 0, 0, 0, 0.0028811486, -2.789488, 0, 0.3856904, 0.020837775, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.0009636169, -0.9299741, 0, 0.1289964, 0.0069470056, 0, 0, 0)
 shape = SubResource("CylinderShape3D_xjght")

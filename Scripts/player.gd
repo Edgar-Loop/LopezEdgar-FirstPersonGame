@@ -4,8 +4,9 @@ extends CharacterBody3D
 @onready var standing_collision_shape: CollisionShape3D = $standing_collision_shape
 @onready var crouching_collision_shape: CollisionShape3D = $crouching_collision_shape
 @onready var ray_cast_3d: RayCast3D = $RayCast3D
-
-
+@onready var gun1 = $Head/Camera3D/Gun
+@onready var gun2 = $Head/Camera3D/Bazooka
+@onready var htp = $Head/Camera3D/Howtoplay
 
 var current_speed = 5.0
 const walking_speed = 5.0
@@ -19,15 +20,26 @@ var lerp_speed = 10.0
 var direction = Vector3.ZERO
 var crouching_depth = -0.9
 
-
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+var using_gun1 = false
 var bullet = load("res://Scenes/bullet.tscn")
+var rocket = load("res://Scenes/rocket.tscn")
 @onready var pos = $Head/Camera3D/Gun/barrel
+@onready var pos2 = $Head/Camera3D/Bazooka/barrel
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	gun1.visible = true
+	gun2.visible = false
+	htp.visible = true
 	
+func _switch_gun():
+		using_gun1 = !using_gun1
+
+		gun1.visible = using_gun1
+		gun2.visible = !using_gun1
+
 func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
@@ -69,9 +81,24 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, current_speed)
 
 	if Input.is_action_just_pressed("Shoot"):
-		var instance = bullet.instantiate()
-		instance.global_transform = pos.global_transform
-		get_parent().add_child(instance)
-
-		print("Bullet spawned at: ", instance.global_position)
+		if gun1.visible == true:
+			var instance = bullet.instantiate()
+			instance.global_transform = pos.global_transform
+			get_parent().add_child(instance)
+			print("Bullet spawned at: ", instance.global_position)
+			
+		else:
+			var instance = rocket.instantiate()
+			instance.global_transform = pos2.global_transform
+			get_parent().add_child(instance)
+			print("Bullet spawned at: ", instance.global_position)
+	if Input.is_action_just_pressed("Switch"):
+		_switch_gun()
+	if Input.is_action_just_pressed("htp"):
+		if htp.visible == true:
+			htp.visible = false
+			print("false")
+		else:
+			htp.visible = true
+			print("true")
 	move_and_slide()

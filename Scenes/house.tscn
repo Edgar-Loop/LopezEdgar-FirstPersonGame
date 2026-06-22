@@ -221,6 +221,14 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.31
 light_color = Color(1, 0.6666667, 0.15686275, 1)
 light_energy = 1.5
 
+[node name="torch_mounted6" parent="." unique_id=1788371829 instance=ExtResource("4_iqtyj")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.9488077e-07, -5, -10)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="torch_mounted6" unique_id=704680966]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.3113407e-08, 0.5, 0.29999924)
+light_color = Color(1, 0.6666667, 0.15686275, 1)
+light_energy = 1.5
+
 [node name="torch_mounted3" parent="." unique_id=1468758252 instance=ExtResource("4_iqtyj")]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -8.500001, -7.4, 0)
 
