@@ -2,13 +2,14 @@
 
 [ext_resource type="Script" uid="uid://h45ak0lshclv" path="res://Scenes/rocket.gd" id="1_kvp10"]
 [ext_resource type="Texture2D" uid="uid://otd6n52elydg" path="res://assets/textures/dev/grids/Orange/texture_05.png" id="1_wrv6b"]
+[ext_resource type="PackedScene" uid="uid://dw3oe4wtp2ttg" path="res://Blender/cube.blend" id="3_hthiq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kvp10"]
 albedo_texture = ExtResource("1_wrv6b")
 
 [sub_resource type="SphereMesh" id="SphereMesh_hthiq"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_n4fq7"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hthiq"]
 
 [node name="Rocket" type="Node3D" unique_id=174803842]
 
@@ -16,8 +17,22 @@ albedo_texture = ExtResource("1_wrv6b")
 script = ExtResource("1_kvp10")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1813310362]
+visible = false
 material_override = SubResource("StandardMaterial3D_kvp10")
 mesh = SubResource("SphereMesh_hthiq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1892055888]
-shape = SubResource("SphereShape3D_n4fq7")
+[node name="cube" parent="CharacterBody3D" unique_id=299298923 instance=ExtResource("3_hthiq")]
+transform = Transform3D(-1.5298985e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5298985e-08, 0.009199619, -0.9, -0.025664806)
+
+[node name="Timer" type="Timer" parent="CharacterBody3D" unique_id=780513843]
+wait_time = 5.0
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1344562104]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1892055888]
+transform = Transform3D(0.55, 0, 0, 0, -4.3274273e-08, 0.55, 0, -0.99, -2.4041263e-08, 0, 0, 0.3)
+shape = SubResource("CapsuleShape3D_hthiq")
+
+[connection signal="ready" from="CharacterBody3D/Timer" to="CharacterBody3D" method="_on_timer_ready"]
+[connection signal="timeout" from="CharacterBody3D/Timer" to="CharacterBody3D" method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area3D" to="CharacterBody3D" method="_on_area_3d_body_entered"]

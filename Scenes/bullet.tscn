@@ -22,3 +22,8 @@ mesh = SubResource("CylinderMesh_oduel")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1734339514]
 transform = Transform3D(1, 0, 0, 0, 0.0009636169, -0.9299741, 0, 0.1289964, 0.0069470056, 0, 0, 0)
 shape = SubResource("CylinderShape3D_xjght")
+
+[node name="Timer" type="Timer" parent="." unique_id=369763596]
+wait_time = 5.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

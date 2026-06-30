@@ -79,26 +79,26 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, current_speed)
 		velocity.z = move_toward(velocity.z, 0, current_speed)
-
-	if Input.is_action_just_pressed("Shoot"):
+		
+	if Input.is_action_pressed("Shoot"):
 		if gun1.visible == true:
 			var instance = bullet.instantiate()
 			instance.global_transform = pos.global_transform
 			get_parent().add_child(instance)
-			print("Bullet spawned at: ", instance.global_position)
 			
-		else:
+	if Input.is_action_just_pressed("Shoot"):
+		if gun2.visible == true:
 			var instance = rocket.instantiate()
 			instance.global_transform = pos2.global_transform
 			get_parent().add_child(instance)
-			print("Bullet spawned at: ", instance.global_position)
+
 	if Input.is_action_just_pressed("Switch"):
 		_switch_gun()
 	if Input.is_action_just_pressed("htp"):
 		if htp.visible == true:
 			htp.visible = false
-			print("false")
+
 		else:
 			htp.visible = true
-			print("true")
+
 	move_and_slide()
