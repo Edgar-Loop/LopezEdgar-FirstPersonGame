@@ -9,6 +9,24 @@ albedo_texture = ExtResource("1_wrv6b")
 
 [sub_resource type="SphereMesh" id="SphereMesh_hthiq"]
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hthiq"]
+angle_min = 5.000011
+angle_max = 20.000011
+direction = Vector3(0, -1, 0)
+spread = 10.0
+initial_velocity_min = 12.0
+initial_velocity_max = 14.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4fq7"]
+albedo_color = Color(0.98691374, 0.5419661, 1.540184e-06, 1)
+emission_enabled = true
+emission = Color(1.5595324, 0.8851017, 0.49478632, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qcqlf"]
+material = SubResource("StandardMaterial3D_n4fq7")
+top_radius = 0.1
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hthiq"]
 
 [node name="Rocket" type="Node3D" unique_id=174803842]
@@ -25,7 +43,18 @@ mesh = SubResource("SphereMesh_hthiq")
 transform = Transform3D(-1.5298985e-08, 0, 0.35, 0, 0.35, 0, -0.35, 0, -1.5298985e-08, 0.009199619, -0.9, -0.025664806)
 
 [node name="Timer" type="Timer" parent="CharacterBody3D" unique_id=780513843]
-wait_time = 5.0
+wait_time = 10.0
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="CharacterBody3D" unique_id=1396719553]
+transform = Transform3D(-4.3711385e-08, 0, -0.99999994, 0.99999994, -4.371138e-08, -4.3711385e-08, -4.3711385e-08, -0.99999994, 1.9106853e-15, 0, 8.881784e-16, 0)
+amount = 4
+lifetime = 0.2
+explosiveness = 1.0
+fixed_fps = 60
+local_coords = true
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_hthiq")
+draw_pass_1 = SubResource("CylinderMesh_qcqlf")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1344562104]
 
