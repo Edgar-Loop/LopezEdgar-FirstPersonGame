@@ -46,7 +46,7 @@ radiance_size = 0
 
 [sub_resource type="Environment" id="Environment_o06y3"]
 background_mode = 2
-background_energy_multiplier = 0.5
+background_energy_multiplier = 0.4
 sky = SubResource("Sky_5ukr8")
 ambient_light_sky_contribution = 0.5
 tonemap_mode = 2
@@ -70,151 +70,152 @@ height = 1.8
 
 [node name="Wall" type="Node" parent="Stage" unique_id=941214519]
 
-[node name="CSGBox3D37" type="CSGBox3D" parent="Stage/Wall" unique_id=2129908385]
+[node name="CSGBox3D37" type="CSGBox3D" parent="Stage/Wall" unique_id=2129908385 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 49.99649, 9.496489, 0)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D38" type="CSGBox3D" parent="Stage/Wall" unique_id=745664078]
+[node name="CSGBox3D38" type="CSGBox3D" parent="Stage/Wall" unique_id=745664078 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 49.99649, 9.496489, 20)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D39" type="CSGBox3D" parent="Stage/Wall" unique_id=247610730]
+[node name="CSGBox3D39" type="CSGBox3D" parent="Stage/Wall" unique_id=247610730 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 50.007023, 9.496489, -19.861841)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D40" type="CSGBox3D" parent="Stage/Wall" unique_id=406693391]
+[node name="CSGBox3D40" type="CSGBox3D" parent="Stage/Wall" unique_id=406693391 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 49.99649, 9.496489, 59.830887)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D41" type="CSGBox3D" parent="Stage/Wall" unique_id=317969684]
+[node name="CSGBox3D41" type="CSGBox3D" parent="Stage/Wall" unique_id=317969684 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 49.99649, 9.496489, 79.83089)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D42" type="CSGBox3D" parent="Stage/Wall" unique_id=1489292321]
+[node name="CSGBox3D42" type="CSGBox3D" parent="Stage/Wall" unique_id=1489292321 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 50.007023, 9.496489, 39.969048)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D43" type="CSGBox3D" parent="Stage/Wall" unique_id=1006689016]
+[node name="CSGBox3D43" type="CSGBox3D" parent="Stage/Wall" unique_id=1006689016 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -70.00351, 9.496489, 0)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D44" type="CSGBox3D" parent="Stage/Wall" unique_id=1353787511]
+[node name="CSGBox3D44" type="CSGBox3D" parent="Stage/Wall" unique_id=1353787511 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -70.00351, 9.496489, 20)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D45" type="CSGBox3D" parent="Stage/Wall" unique_id=93138712]
+[node name="CSGBox3D45" type="CSGBox3D" parent="Stage/Wall" unique_id=93138712 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -69.99298, 9.496489, -19.861841)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D46" type="CSGBox3D" parent="Stage/Wall" unique_id=266675672]
+[node name="CSGBox3D46" type="CSGBox3D" parent="Stage/Wall" unique_id=266675672 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -70.00351, 9.496489, 59.830887)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D47" type="CSGBox3D" parent="Stage/Wall" unique_id=1481172131]
+[node name="CSGBox3D47" type="CSGBox3D" parent="Stage/Wall" unique_id=1481172131 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -70.00351, 9.496489, 79.83089)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D48" type="CSGBox3D" parent="Stage/Wall" unique_id=197728672]
+[node name="CSGBox3D48" type="CSGBox3D" parent="Stage/Wall" unique_id=197728672 groups=["Env"]]
 transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -69.99298, 9.496489, 39.969048)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D49" type="CSGBox3D" parent="Stage/Wall" unique_id=979614443]
+[node name="CSGBox3D49" type="CSGBox3D" parent="Stage/Wall" unique_id=979614443 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 9.489464, -29.861843)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D50" type="CSGBox3D" parent="Stage/Wall" unique_id=1795970865]
+[node name="CSGBox3D50" type="CSGBox3D" parent="Stage/Wall" unique_id=1795970865 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 20, 9.489464, -29.861843)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D51" type="CSGBox3D" parent="Stage/Wall" unique_id=69866738]
+[node name="CSGBox3D51" type="CSGBox3D" parent="Stage/Wall" unique_id=69866738 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 40, 9.489464, -29.861843)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D52" type="CSGBox3D" parent="Stage/Wall" unique_id=1276413080]
+[node name="CSGBox3D52" type="CSGBox3D" parent="Stage/Wall" unique_id=1276413080 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -60, 9.489464, -29.861843)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D53" type="CSGBox3D" parent="Stage/Wall" unique_id=1710300659]
+[node name="CSGBox3D53" type="CSGBox3D" parent="Stage/Wall" unique_id=1710300659 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -40, 9.489464, -29.861843)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D54" type="CSGBox3D" parent="Stage/Wall" unique_id=216931937]
+[node name="CSGBox3D54" type="CSGBox3D" parent="Stage/Wall" unique_id=216931937 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -20, 9.489464, -29.861843)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D55" type="CSGBox3D" parent="Stage/Wall" unique_id=871793383]
+[node name="CSGBox3D55" type="CSGBox3D" parent="Stage/Wall" unique_id=871793383 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 9.489464, 90.13815)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D56" type="CSGBox3D" parent="Stage/Wall" unique_id=2147006623]
+[node name="CSGBox3D56" type="CSGBox3D" parent="Stage/Wall" unique_id=2147006623 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 20, 9.489464, 90.13815)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D57" type="CSGBox3D" parent="Stage/Wall" unique_id=1162708404]
+[node name="CSGBox3D57" type="CSGBox3D" parent="Stage/Wall" unique_id=1162708404 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 40, 9.489464, 90.13815)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D58" type="CSGBox3D" parent="Stage/Wall" unique_id=694739327]
+[node name="CSGBox3D58" type="CSGBox3D" parent="Stage/Wall" unique_id=694739327 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -60, 9.489464, 90.13815)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D59" type="CSGBox3D" parent="Stage/Wall" unique_id=1957559765]
+[node name="CSGBox3D59" type="CSGBox3D" parent="Stage/Wall" unique_id=1957559765 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -40, 9.489464, 90.13815)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
-[node name="CSGBox3D60" type="CSGBox3D" parent="Stage/Wall" unique_id=689374875]
+[node name="CSGBox3D60" type="CSGBox3D" parent="Stage/Wall" unique_id=689374875 groups=["Env"]]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -20, 9.489464, 90.13815)
 use_collision = true
 size = Vector3(20, 1, 20)
 material = SubResource("StandardMaterial3D_fq0cl")
 
 [node name="Grave" parent="Stage" unique_id=1613656023 instance=ExtResource("2_vy5pj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0, 65)
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="Stage" unique_id=575805908]
 visible = false
@@ -494,7 +495,7 @@ environment = SubResource("Environment_o06y3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="env" unique_id=210487827]
 transform = Transform3D(0.075610146, 0.9956426, 0.05457551, -0.017337741, 0.056031488, -0.99827874, -0.9969867, 0.074533984, 0.02149879, 0, 17, 0)
-light_energy = 0.5
+light_energy = 0.3
 shadow_enabled = true
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1942950186]

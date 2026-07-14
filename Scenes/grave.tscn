@@ -52,85 +52,85 @@ uv1_world_triplanar = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_346fj"]
 albedo_texture = ExtResource("1_y8qdb")
 
-[node name="Grave" type="Node" unique_id=1613656023]
+[node name="Grave" type="Node3D" unique_id=359495563]
 
-[node name="Pole" type="CSGCylinder3D" parent="." unique_id=362721939]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 1.05, 63.499996)
+[node name="Pole" type="CSGCylinder3D" parent="." unique_id=657267885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, -0.5000038)
 material_override = SubResource("StandardMaterial3D_50glp")
 use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole4" type="CSGCylinder3D" parent="." unique_id=1010399628]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.5, 1.05, 63.499996)
+[node name="Pole4" type="CSGCylinder3D" parent="." unique_id=1583496444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.05, -0.5000038)
 material_override = SubResource("StandardMaterial3D_vy5pj")
 use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole5" type="CSGCylinder3D" parent="." unique_id=1722581740]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.5, 1.05, 63.499996)
+[node name="Pole5" type="CSGCylinder3D" parent="." unique_id=1733355612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 1.05, -0.5000038)
 material_override = SubResource("StandardMaterial3D_bmxlf")
 use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole3" type="CSGCylinder3D" parent="." unique_id=1143154783]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -61.025, 1.5999998, 63.499996)
+[node name="Pole3" type="CSGCylinder3D" parent="." unique_id=1608022454]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -7.0250015, 1.5999998, -0.5000038)
 material_override = SubResource("StandardMaterial3D_4kpch")
 use_collision = true
 height = 13.35
 material = SubResource("StandardMaterial3D_grg3l")
 
-[node name="Pole6" type="CSGCylinder3D" parent="Pole3" unique_id=59239178]
+[node name="Pole6" type="CSGCylinder3D" parent="Pole3" unique_id=1286688593]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3841858e-07, -0.042186737, 0)
 operation = 2
 radius = 0.6
 height = 3.759375
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole2" type="CSGCylinder3D" parent="." unique_id=167425921]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68, 1.05, 63.499996)
+[node name="Pole2" type="CSGCylinder3D" parent="." unique_id=2115047892]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1.05, -0.5000038)
 material_override = SubResource("StandardMaterial3D_frkhe")
 use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole6" type="CSGCylinder3D" parent="." unique_id=2043018734]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 1.05, 86.5)
+[node name="Pole6" type="CSGCylinder3D" parent="." unique_id=992515102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05, 22.5)
 material_override = SubResource("StandardMaterial3D_1p5hy")
 use_collision = true
 radius = 0.6
 height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole7" type="CSGCylinder3D" parent="." unique_id=1055900347]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -61.025, 1.5999998, 86.5)
+[node name="Pole7" type="CSGCylinder3D" parent="." unique_id=1206839242]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -7.0250015, 1.5999998, 22.5)
 material_override = SubResource("StandardMaterial3D_h1m7h")
 use_collision = true
 height = 13.35
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole9" type="CSGCylinder3D" parent="." unique_id=1197036760]
-transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, -53.925003, 1.5999999, 74.918755)
+[node name="Pole9" type="CSGCylinder3D" parent="." unique_id=2047145108]
+transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, 0.07499695, 1.5999999, 10.918755)
 material_override = SubResource("StandardMaterial3D_erwvk")
 use_collision = true
 height = 22.8375
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole10" type="CSGCylinder3D" parent="." unique_id=509657287]
-transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, -67.925, 1.5999999, 74.918755)
+[node name="Pole10" type="CSGCylinder3D" parent="." unique_id=2022908982]
+transform = Transform3D(1.9106855e-15, 4.371139e-08, -1, 1, -4.371139e-08, 0, -4.371139e-08, -1, -4.371139e-08, -13.925003, 1.5999999, 10.918755)
 material_override = SubResource("StandardMaterial3D_2w5on")
 use_collision = true
 height = 22.8375
 material = SubResource("StandardMaterial3D_v1gob")
 
-[node name="Pole8" type="CSGCylinder3D" parent="." unique_id=1989318770]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68, 1.05, 86.5)
+[node name="Pole8" type="CSGCylinder3D" parent="." unique_id=1475895146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1.05, 22.5)
 material_override = SubResource("StandardMaterial3D_346fj")
 use_collision = true
 radius = 0.6
@@ -138,29 +138,29 @@ height = 2.1
 material = SubResource("StandardMaterial3D_v1gob")
 
 [node name="Crosspart1" parent="." unique_id=38167265 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.9961947, 0.08715573, -1.2987217e-09, -0.08715573, 0.9961946, -1.4844457e-08, 0, 1.490116e-08, 0.9999999, -61.004356, 0.9501903, 83)
+transform = Transform3D(0.9961947, 0.08715573, -1.2987217e-09, -0.08715573, 0.9961946, -1.4844457e-08, 0, 1.490116e-08, 0.9999999, -7.0043564, 0.9501903, 19)
 size = Vector3(0.5, 2.6000001, 0.1)
 
-[node name="Crosspart2" parent="." unique_id=1963528050 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.9961947, -0.08715574, 0, 0.08682408, 0.9924039, -0.08715574, 0.0075961226, 0.08682408, 0.9961947, -57, 0.9, 83)
+[node name="Crosspart2" parent="." unique_id=1054491012 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(0.9961947, -0.08715574, 0, 0.08682408, 0.9924039, -0.08715574, 0.0075961226, 0.08682408, 0.9961947, -3, 0.9, 19)
 
-[node name="Crosspart3" parent="." unique_id=569638728 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(1, 0, 0, 0, 0.9848077, -0.17364818, 0, 0.17364818, 0.9848077, -65, 0.9, 83)
+[node name="Crosspart3" parent="." unique_id=689955205 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, -0.17364818, 0, 0.17364818, 0.9848077, -11, 0.9, 19)
 
-[node name="Crosspart4" parent="." unique_id=51233095 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.9667751, -0.17159835, -0.18947244, 0.20884548, 0.9576246, 0.19833942, 0.14740878, -0.2313201, 0.9616452, -61, 1, 77)
+[node name="Crosspart4" parent="." unique_id=1093226994 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(0.9667751, -0.17159835, -0.18947244, 0.20884548, 0.9576246, 0.19833942, 0.14740878, -0.2313201, 0.9616452, -7, 1, 13)
 
-[node name="Crosspart5" parent="." unique_id=301722968 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.98481965, -0.0045421063, 0.17352097, 0.005393529, 0.9999756, -0.004435526, -0.17349659, 0.005304085, 0.9848202, -57, 1, 77)
+[node name="Crosspart5" parent="." unique_id=16973143 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(0.98481965, -0.0045421063, 0.17352097, 0.005393529, 0.9999756, -0.004435526, -0.17349659, 0.005304085, 0.9848202, -3, 1, 13)
 
-[node name="Crosspart6" parent="." unique_id=781316624 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.9848077, -0.030153692, -0.17101006, 0, 0.9848077, -0.1736482, 0.17364818, 0.17101008, 0.96984625, -65, 1.1, 77)
+[node name="Crosspart6" parent="." unique_id=286265315 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(0.9848077, -0.030153692, -0.17101006, 0, 0.9848077, -0.1736482, 0.17364818, 0.17101008, 0.96984625, -11, 1.1, 13)
 
-[node name="Crosspart7" parent="." unique_id=30616247 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.97742254, -0.18102852, -0.108967096, 0.16445924, 0.9755832, -0.1455689, 0.13265859, 0.12436168, 0.9833288, -61, 1, 71)
+[node name="Crosspart7" parent="." unique_id=1307894358 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(0.97742254, -0.18102852, -0.108967096, 0.16445924, 0.9755832, -0.1455689, 0.13265859, 0.12436168, 0.9833288, -7, 1, 7)
 
-[node name="Crosspart8" parent="." unique_id=1173066651 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.98106027, -0.15610555, -0.11468136, 0.1729874, 0.97247434, 0.15610556, 0.08715574, -0.17298742, 0.98106027, -57, 1, 71)
+[node name="Crosspart8" parent="." unique_id=1258880969 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(0.98106027, -0.15610555, -0.11468136, 0.1729874, 0.97247434, 0.15610556, 0.08715574, -0.17298742, 0.98106027, -3, 1, 7)
 
-[node name="Crosspart9" parent="." unique_id=609562767 instance=ExtResource("3_mxk5r")]
-transform = Transform3D(0.9961947, 0.08682408, 0.0075961226, -0.08715574, 0.9924039, 0.08682408, 0, -0.08715574, 0.9961947, -65, 1, 71)
+[node name="Crosspart9" parent="." unique_id=1143628123 instance=ExtResource("3_mxk5r")]
+transform = Transform3D(0.9961947, 0.08682408, 0.0075961226, -0.08715574, 0.9924039, 0.08682408, 0, -0.08715574, 0.9961947, -11, 1, 7)
